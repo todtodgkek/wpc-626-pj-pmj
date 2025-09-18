@@ -1,0 +1,57 @@
+</div>
+            <div class="product-card">
+              <div class="product-image">Premium Hand Cream</div>
+              <div class="product-info">
+                <h3 class="product-name">프리미엄 핸드크림</h3>
+                <p class="product-desc">부드럽고 촉촉한 손을 위한 프리미엄 핸드크림입니다.</p>
+                <div class="product-price">₩45,000</div>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="product-image">Luxury Body Lotion</div>
+              <div class="product-info">
+                <h3 class="product-name">럭셔리 바디로션</h3>
+                <p class="product-desc">전신을 부드럽게 감싸는 럭셔리 바디 로션입니다.</p>
+                <div class="product-price">₩65,000</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2-5. 현장포토영역 (갤러리) -->
+        <section class="real-part inbox" id="gallery">
+          <h2 class="temp-tit">Brand Gallery</h2>
+          <div class="gallery-grid">
+            <div class="gallery-item">Campaign Photo 1</div>
+            <div class="gallery-item">Campaign Photo 2</div>
+            <div class="gallery-item">Campaign Photo 3</div>
+            <div class="gallery-item">Campaign Photo 4</div>
+            <div class="gallery-item">Campaign Photo 5</div>
+            <div class="gallery-item">Campaign Photo 6</div>
+          </div>
+        </section>
+
+        <!-- 2-6. 대표포스터영역 (브랜드 비주얼) -->
+        <section class="poster-part inbox">
+          <div class="poster-content">
+            <h2>TAMBURINS EXPERIENCE</h2>
+            <p>
+              일상 속에서 만나는 특별한 순간들. <br>
+              템버린즈와 함께 당신만의 라이프스타일을 완성해보세요.
+            </p>
+          </div>
+        </section>
+
+        <!-- 2-7. 최신동영상영역 (뉴스) -->
+        <section class="video-part inbox" id="news">
+          <h2 class="temp-tit">Latest News</h2>
+          <div class="news-grid">
+            <div class="news-item">
+              <div class="news-date">2024.09.15</div>
+              <h3 class="news-title">신제품 시그니처 퍼퓸 런칭</h3>
+              <p class="news-content">새로운 시그니처 퍼퓸 컬렉션이 출시되었습니다. 한국의 아름다운 사계절을 담은 특별한 향을 만나보세요.</p>
+            </div>
+            <div class="news-item">
+              <div class="news-date">2024.09.10</div>
+              <h3 class="news-title">플래그십 스토어 오픈</h3>
+              <p class="news-content">강남 플래그십 스토어가 새롭게 문을 열었습니
