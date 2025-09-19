@@ -1,0 +1,235 @@
+@charset "utf-8";
+/* 템버린즈 메인 페이지 CSS - main.css */
+
+/* 외부 CSS 불러오기 */
+@import url(./reset.css);
+@import url(./core.css);
+/* 12그리드 CSS */
+@import url(./grid_12_flex.css);
+
+/* 공사중 표시 */
+body * {
+    outline: 2px dashed #ccc;
+}
+
+/***************** 메인 CSS *****************/
+/***************** 1. 상단영역 *****************/
+/* 상단영역 최상위 부모박스 */
+#top-area{    
+    position: fixed;
+    /* 상단영역이 항상위! */
+    z-index: 9999;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+/* 로고박스 */
+.logo-box{    
+    padding: 10px 0;
+}
+
+/* 메뉴박스 */
+.menu-box{
+    padding-right: 10px;
+}
+
+/* 메뉴그룹 플렉스 */
+.menu-group{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    height: 100%;
+}
+/* 상단영역 메뉴 공통 플렉스 */
+.menu-group ul{
+    display: flex;
+}
+/* 탑메뉴 */
+.top-menu ul{
+    font-size: 1.6rem;
+    gap: 10rem;
+  
+}
+/* GNB메뉴 */
+.gnb-menu ul{
+    font-size: 1.6rem;
+    gap: 10rem;
+}
+.gnb-menu a {
+    color: white;
+}
+
+    
+    
+/* 상위 메뉴 li오버시 a요소 글자 빨간색 */
+.gnb-menu > ul > li:hover > a{
+    color: rgb(0, 0, 0);
+}
+
+/* 서브메뉴 */
+.sub-menu {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #d8b3b3;
+    /* 서브메뉴를 숨기기위해 넘치는 자식 숨기기설정 */
+    overflow: hidden;
+    /* 높이값을 0으로 하면 자식요소가 숨겨짐!
+    -> 단, 여기에 위아래 패딩을 줄 경우 숨겨지지 않는다! */
+    max-height: 0;
+    /* 처음에 최대높이값 셋팅필수! 그래야 트랜지션 먹음! */
+
+    /* 트랜지션 */
+    transition: .4s ease-out;
+}
+/* 부모 li에 마우스 오버시 .sub-menu 높이값 변경하기 */
+.gnb-menu > ul > li:hover .sub-menu{
+    max-height: 400px;
+    /* 최대 높이값을 컨텐츠 높이값 보다 좀 더 크게 잡으면
+    오버시 높이값이 내용만큼만 커지게 된다! */
+}
+
+/* 패딩만 내부에 다른 블록요소를 사용함!
+-> 자식요소 숨기기 부모박스엔 패딩을 줄 수 없다! */
+.padding-box{
+    padding: 5vw;    
+}
+
+/* 타이틀 바 */
+.title-bar{
+    display: flex;
+    justify-content: space-between;
+    /* 글자크기 */
+    font-size: 3.6rem;
+    margin-bottom: 2.4rem;
+}
+/* 서브리스트 ul */
+.sub-list ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* height: 100px; */
+
+    /* 글자크기 */
+    font-size: 20rem;
+}
+
+/* 서브리스트 li */
+.sub-list li {
+    /* 가로크기 제한 */
+    width: calc(100% / 5);
+
+    /* 한줄짜리 말줄임표시 3가지 셋팅! */
+    /* 1.줄바꿈 방지 */
+    white-space: nowrap;
+    /* 2.넘치는 자식 숨기기 */
+    overflow: hidden;
+    /* 3.넘치는 글자 말줄임표시 */
+    text-overflow: ellipsis;
+}
+
+/* 서브리스트의 ul별로 높이값 셋팅 */
+/* 두줄 클래스 */
+.two-line{
+    height: 8rem;
+}
+/* 세줄 클래스 */
+.three-line{
+    height: 13.8rem;
+}
+
+
+/***************** 1.5. 드라마파트메뉴 *****************/
+/***************** 2. 메인영역 *****************/
+/***************** 2-1. 배너영역 *****************/
+.video-part{
+    position: relative;
+    height: 100vh;
+overflow: hidden;
+   
+}
+.video-part::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.video-part iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 177.78%; /* 16:9 비율 기준 (100 / 9 * 16) */
+  height: 140%;
+  transform: translate(-50%, -50%);
+  border: none;
+}
+/***************** 2-2. 캐릭터영역 *****************/
+.cat-part img {
+    width: 45%;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+/***************** 2-3. 퍼퓸영역 *****************/
+.perfune-section{
+    height: 100vh;
+}
+.perfune-container{
+    display: flex;
+}
+.perfune-container aside{
+    flex: 1;
+    height: 100vh;
+}
+ /* 하위 이미지 */
+.perfune-container aside:first-child{
+    background: url(../images/perfume_01.jpg) no-repeat center/ cover;
+}
+.perfune-container aside:last-child{
+    background: url(../images/perfume_02.jpg) no-repeat center/ cover;
+}
+/***************** 2-4. 미리보기영역 *****************/
+.view-part{
+    height: auto;
+}
+/***************** 2-5. 현장포토영역 *****************/
+.real-part{
+    height: auto;
+}
+/***************** 2-6. 대표포스터영역 *****************/
+.poster-part{
+    height: auto;
+}
+/***************** 2-7. 최신동영상영역 *****************/
+
+/***************** 3. 하단영역 *****************/
+.bottom-area{
+    height: auto;
+}
+/* 동영상 아래 이미지 섹션  */
+.image-section {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.image-container {
+  display: flex;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+}
+
+.image-container img {
+  width: 50%;
+  height: 300px;  /* 세로 높이 줄임 (400px → 200px) */
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
