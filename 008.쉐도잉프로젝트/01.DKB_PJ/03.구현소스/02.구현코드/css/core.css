@@ -32,7 +32,7 @@ body{
 .temp-tit{
     position: absolute;
     font-size: min(3vmax,43px);
-    color: #ccc;
+    color: #ffffff;
     width: 1920px;
     /* 최대가로크기를 100%로 설정하면
     부모박스가 width 크기보다 작아질때
@@ -40,7 +40,7 @@ body{
     max-width: 100%;
     text-align: center;
     padding: 3vh 0;
-    background-color: #0000007a;
+    background-color: #fff;
 }
 /* 중앙속박스 */
 .inbox{
@@ -105,7 +105,7 @@ body{
 }
 .scbar::-webkit-scrollbar-thumb{
     /* 스크롤바 */
-    background-color: #555;
+    background-color: #ffffff;
     border-radius: 5px;
 }
 .scbar::-webkit-scrollbar-track{

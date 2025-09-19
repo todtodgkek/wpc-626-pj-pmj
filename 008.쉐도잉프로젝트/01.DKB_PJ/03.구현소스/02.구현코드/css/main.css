@@ -1,5 +1,5 @@
 @charset "utf-8";
-/* 도깨비 PJ 메인 페이지 CSS - main.css */
+/* 템버린즈 메인 페이지 CSS - main.css */
 
 /* 외부 CSS 불러오기 */
 @import url(./reset.css);
@@ -54,17 +54,23 @@ body * {
 /* 탑메뉴 */
 .top-menu ul{
     font-size: 1.6rem;
-    gap: 2rem;
+    gap: 10rem;
+  
 }
 /* GNB메뉴 */
 .gnb-menu ul{
-    font-size: 1.8rem;
-    gap: 3.2rem;
-
+    font-size: 1.6rem;
+    gap: 10rem;
 }
+.gnb-menu a {
+    color: white;
+}
+
+    
+    
 /* 상위 메뉴 li오버시 a요소 글자 빨간색 */
 .gnb-menu > ul > li:hover > a{
-    color: #f00;
+    color: rgb(0, 0, 0);
 }
 
 /* 서브메뉴 */
@@ -73,7 +79,7 @@ body * {
     left: 0;
     width: 100%;
     box-sizing: border-box;
-    background-color: #fff;
+    background-color: #d8b3b3;
     /* 서브메뉴를 숨기기위해 넘치는 자식 숨기기설정 */
     overflow: hidden;
     /* 높이값을 0으로 하면 자식요소가 숨겨짐!
@@ -113,7 +119,7 @@ body * {
     /* height: 100px; */
 
     /* 글자크기 */
-    font-size: 1.6rem;
+    font-size: 20rem;
 }
 
 /* 서브리스트 li */
@@ -168,28 +174,54 @@ overflow: hidden;
   border: none;
 }
 /***************** 2-2. 캐릭터영역 *****************/
-.cat-part{
-    height: 188px;
+.cat-part img {
+    width: 45%;
+    max-height: 300px;
+    object-fit: contain;
 }
+
 /***************** 2-3. 드라마소개영역 *****************/
 .intro-part{
-    height: 500px;
+    height: auto;
 }
 /***************** 2-4. 미리보기영역 *****************/
 .view-part{
-    height: 660px;
+    height: auto;
 }
 /***************** 2-5. 현장포토영역 *****************/
 .real-part{
-    height: 906px;
+    height: auto;
 }
 /***************** 2-6. 대표포스터영역 *****************/
 .poster-part{
-    height: 654px;
+    height: auto;
 }
 /***************** 2-7. 최신동영상영역 *****************/
 
 /***************** 3. 하단영역 *****************/
 .bottom-area{
-    height: 391px;
+    height: auto;
+}
+/* 동영상 아래 이미지 섹션  */
+.image-section {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.image-container {
+  display: flex;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+}
+
+.image-container img {
+  width: 50%;
+  height: 300px;  /* 세로 높이 줄임 (400px → 200px) */
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  padding: 0;
 }
