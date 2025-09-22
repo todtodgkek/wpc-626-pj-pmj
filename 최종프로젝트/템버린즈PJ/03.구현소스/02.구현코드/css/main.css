@@ -8,7 +8,7 @@
 @import url(./grid_12_flex.css);
 
 /* 공사중 표시 */
-body * {
+body *:not(.bottom-area):not(.bottom-area *) {
     outline: 2px dashed #ccc;
 }
 
@@ -207,29 +207,75 @@ overflow: hidden;
 /***************** 2-7. 최신동영상영역 *****************/
 
 /***************** 3. 하단영역 *****************/
-.bottom-area{
-    height: auto;
-}
-/* 동영상 아래 이미지 섹션  */
-.image-section {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.image-container {
-  display: flex;
-  width: 50%;
-  margin: 0;
-  padding: 0;
-  gap: 0;
+.footer-menu {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 100px; 
+    padding: 0 40px;
+    align-items: flex-start;
 }
 
-.image-container img {
-  width: 50%;
-  height: 300px;  /* 세로 높이 줄임 (400px → 200px) */
-  object-fit: cover;
-  display: block;
-  margin: 0;
-  padding: 0;
+#bottom-area {
+    width: 100%;
+    overflow: visible;
+}
+
+.bottom-area {
+    background-color: #ffffff;
+    padding: 80px 0;
+    border-top: 1px solid #e8e8e8;
+    overflow: visible;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    gap: 100px;
+}
+
+.footer-column {
+    flex: none;
+    min-width: 180px;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    margin: 0 0 24px 0;
+    line-height: 1.4;
+}
+
+.footer-column ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-column li {
+    margin: 0 0 14px 0;
+    line-height: 1.5;
+}
+
+.footer-column a {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    display: block;
+}
+
+.footer-column a:hover {
+    color: #000;
+}
+
+.footer-column a strong {
+    font-weight: 600;
+    color: #000;
 }
