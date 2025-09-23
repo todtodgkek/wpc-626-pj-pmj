@@ -8,8 +8,8 @@
 @import url(./grid_12_flex.css);
 
 /* 공사중 표시 */
-body *:not(.bottom-area):not(.bottom-area *) {
-    outline: 2px dashed #ccc;
+body * {
+    outline: none !important;
 }
 
 /***************** 메인 CSS *****************/
@@ -239,8 +239,8 @@ overflow: hidden;
 }
 
 .footer-column {
-    flex: none;
-    min-width: 180px;
+    flex: 1; 
+   
 }
 
 .footer-column h3 {
