@@ -205,13 +205,33 @@ overflow: hidden;
     height: auto;
 }
 /***************** 2-7. 최신동영상영역 *****************/
+html, body {
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#main-area {
+    flex: 1;
+}
+
+.footer-menu {
+    flex-wrap: wrap;
+    gap: 60px;
+}
 
 /***************** 3. 하단영역 *****************/
 .footer-menu {
     display: flex;
     justify-content: flex-start;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 39px 0 24px 0;
     gap: 100px; 
     padding: 0 40px;
     align-items: flex-start;
@@ -233,32 +253,33 @@ overflow: hidden;
     display: flex;
     justify-content: flex-start;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 39px 0 24px 0;
     padding: 0 40px;
     gap: 100px;
 }
 
 .footer-column {
-    flex: 1; 
-   
+    min-width: 200px;  
+    flex-shrink: 0;    
 }
 
+   
 .footer-column h3 {
     font-size: 16px;
     font-weight: 500;
     color: #000;
-    margin: 0 0 24px 0;
+    margin: 39px 0 24px 0;
     line-height: 1.4;
 }
 
 .footer-column ul {
     list-style: none;
-    margin: 0;
+    margin: 39px 0 24px 0;
     padding: 0;
 }
 
 .footer-column li {
-    margin: 0 0 14px 0;
+    margin: 39px 0 24px 0;
     line-height: 1.5;
 }
 
@@ -278,4 +299,14 @@ overflow: hidden;
 .footer-column a strong {
     font-weight: 600;
     color: #000;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 1200px;
+    margin: 39px 0 24px 0;
+    padding: 0 40px;
+    gap: 100px;
+    flex-wrap: wrap; 
 }
