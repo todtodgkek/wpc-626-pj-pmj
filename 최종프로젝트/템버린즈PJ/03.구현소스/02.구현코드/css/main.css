@@ -73,17 +73,34 @@ body * {
     left: 0;
     width: 100%;
     box-sizing: border-box;
-    background-color: #d8b3b3;
-    /* 서브메뉴를 숨기기위해 넘치는 자식 숨기기설정 */
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
     overflow: hidden;
-    /* 높이값을 0으로 하면 자식요소가 숨겨짐!
-    -> 단, 여기에 위아래 패딩을 줄 경우 숨겨지지 않는다! */
     max-height: 0;
-    /* 처음에 최대높이값 셋팅필수! 그래야 트랜지션 먹음! */
-
-    /* 트랜지션 */
     transition: .4s ease-out;
+    z-index: 1000;
 }
+
+/* 제품 이미지 스타일 추가 */
+.product-images {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 0;
+}
+
+.product-images img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.product-images img:hover {
+    transform: scale(1.05);
+}
+
 /* 부모 li에 마우스 오버시 .sub-menu 높이값 변경하기 */
 .gnb-menu > ul > li:hover .sub-menu{
     max-height: 400px;
@@ -105,40 +122,11 @@ body * {
     font-size: 3.6rem;
     margin-bottom: 2.4rem;
 }
-/* 서브리스트 ul */
-.sub-list ul{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    /* height: 100px; */
 
-    /* 글자크기 */
-    font-size: 20rem;
-}
 
-/* 서브리스트 li */
-.sub-list li {
-    /* 가로크기 제한 */
-    width: calc(100% / 5);
 
-    /* 한줄짜리 말줄임표시 3가지 셋팅! */
-    /* 1.줄바꿈 방지 */
-    white-space: nowrap;
-    /* 2.넘치는 자식 숨기기 */
-    overflow: hidden;
-    /* 3.넘치는 글자 말줄임표시 */
-    text-overflow: ellipsis;
-}
 
-/* 서브리스트의 ul별로 높이값 셋팅 */
-/* 두줄 클래스 */
-.two-line{
-    height: 8rem;
-}
-/* 세줄 클래스 */
-.three-line{
-    height: 13.8rem;
-}
+
 
 
 /***************** 1.5. 드라마파트메뉴 *****************/
@@ -309,4 +297,23 @@ body {
     padding: 0 40px;
     gap: 100px;
     flex-wrap: wrap; 
+}
+/* 제품 이미지  */
+.product-images {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.product-images img {
+    width: 180px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.product-images img:hover {
+    transform: scale(1.05);
 }
