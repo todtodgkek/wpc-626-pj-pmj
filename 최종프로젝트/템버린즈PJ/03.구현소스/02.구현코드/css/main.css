@@ -62,7 +62,7 @@ body * {
 
     
     
-/* 상위 메뉴 li오버시 a요소 글자 빨간색 */
+/* 상위 메뉴 li오버시 a요소 글자 검정색 */
 .gnb-menu > ul > li:hover > a{
     color: rgb(0, 0, 0);
 }
@@ -103,7 +103,7 @@ body * {
 
 /* 부모 li에 마우스 오버시 .sub-menu 높이값 변경하기 */
 .gnb-menu > ul > li:hover .sub-menu{
-    max-height: 400px;
+    max-height: 700px;
     /* 최대 높이값을 컨텐츠 높이값 보다 좀 더 크게 잡으면
     오버시 높이값이 내용만큼만 커지게 된다! */
 }
@@ -119,7 +119,7 @@ body * {
     display: flex;
     justify-content: space-between;
     /* 글자크기 */
-    font-size: 3.6rem;
+    font-size: 2.6rem;
     margin-bottom: 2.4rem;
 }
 
@@ -218,8 +218,8 @@ body {
 .footer-menu {
     display: flex;
     justify-content: flex-start;
-    max-width: 1200px;
-    margin: 39px 0 24px 0;
+    max-width: 1000px;
+    margin: 100px 0 24px 0;
     gap: 100px; 
     padding: 0 40px;
     align-items: flex-start;
@@ -253,16 +253,16 @@ body {
 
    
 .footer-column h3 {
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 600;
     color: #000;
-    margin: 39px 0 24px 0;
+    margin: 50px 0 24px 0;
     line-height: 1.4;
 }
 
 .footer-column ul {
     list-style: none;
-    margin: 39px 0 24px 0;
+    margin: 10px 0 24px 0;
     padding: 0;
 }
 
@@ -301,9 +301,18 @@ body {
 /* 제품 이미지  */
 .product-images {
     display: flex;
-    justify-content: center;
+   
     gap: 30px;
-    padding: 20px 0;
+    padding: left 0;
+}
+
+.product-images ol{
+    display: flex;
+    gap: 2vw;
+}
+/* 하위 span */
+.product-images span {
+    display: block;
 }
 
 .product-images img {
