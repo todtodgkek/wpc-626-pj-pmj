@@ -17,7 +17,6 @@ body * {
 /* 상단영역 최상위 부모박스 */
 #top-area{    
     position: fixed;
-    /* 상단영역이 항상위! */
     z-index: 9999;
     width: 100%;
     top: 0;
@@ -33,14 +32,17 @@ body * {
     padding-right: 10px;
 }
 
+
 /* 메뉴그룹 플렉스 */
 .menu-group{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;   /* flex-end → flex-start로 변경 */
     justify-content: space-evenly;
     height: 100%;
 }
+
+
 /* 상단영역 메뉴 공통 플렉스 */
 .menu-group ul{
     display: flex;
@@ -48,14 +50,18 @@ body * {
 /* 탑메뉴 */
 .top-menu ul{
     font-size: 2.6rem;
-    gap: 10rem;
+    gap: 2rem;
   
 }
 /* GNB메뉴 */
-.gnb-menu ul{
-    font-size: 2.6rem;
-    gap: 10rem;
+.gnb-menu ul {
+    font-size: 2rem;     
+    gap: 4rem;            /* 14rem → 4rem으로 줄이기 */
+    font-weight: 300;
+    justify-content: flex-start; /* 왼쪽 정렬 추가 */
 }
+
+
 .gnb-menu a {
     color: white;
 }
@@ -90,10 +96,9 @@ body * {
 }
 
 .product-images img {
-    width: 200px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
+    width: 360px !important;   
+    height: 480px !important;   
+    object-fit: cover !important;
     transition: transform 0.3s ease;
 }
 
@@ -119,7 +124,7 @@ body * {
     display: flex;
     justify-content: space-between;
     /* 글자크기 */
-    font-size: 2.6rem;
+    font-size: 3rem;
     margin-bottom: 2.4rem;
 }
 
@@ -253,7 +258,7 @@ body {
 
    
 .footer-column h3 {
-    font-size: 30px;
+    font-size: 20px; /* 18px에서 20px로 증가 */
     font-weight: 600;
     color: #000;
     margin: 50px 0 24px 0;
@@ -274,7 +279,7 @@ body {
 .footer-column a {
     color: #666;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px; /* 14px에서 16px로 증가 */
     font-weight: 400;
     line-height: 1.5;
     display: block;
@@ -299,18 +304,15 @@ body {
     flex-wrap: wrap; 
 }
 /* 제품 이미지  */
-.product-images {
-    display: flex;
-    justify-content: flex-start;
-    gap: 40px;
-    padding: 40px 0;
-    margin-left: 50px;
+.product-images span {
+    font-size: 20px;      
+    margin-top: 20px;      
+    font-weight: 500;    
 }
-
 .product-images img {
-    width: 280px !important;
-    height: 350px !important;
-    object-fit: cover;
+    width: 300px !important; /* 250px에서 300px로 증가 */
+    height: 380px !important; /* 320px에서 380px로 증가 */
+    object-fit: cover !important;
     border-radius: 0 !important;
     transition: transform 0.3s ease;
 }
@@ -334,7 +336,7 @@ body {
 
 .product-images ol{
     display: flex;
-    gap: 40px; /* 2vw에서 40px로 변경 */
+    gap: 25px; 
     justify-content: flex-start;
     margin-left: 0;
 }
@@ -344,8 +346,8 @@ body {
 }
 
 .product-images img {
-    width: 250px !important;
-    height: 320px !important;
+    width: 180px !important;
+    height: 240px !important;
     object-fit: cover !important;
     border-radius: 0 !important;
     transition: transform 0.3s ease;
@@ -355,4 +357,34 @@ body {
     display: flex;
     gap: 30px;
     padding: left 0;
+}
+.product-images {
+    display: flex;
+    gap: 30px;
+    padding: left 0;
+}
+
+/* 여기서부터 새로 추가하는 코드 */
+/* 서브메뉴 카테고리 텍스트를 가로 일렬로 배치 */
+.sub-menu-categories {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    padding: 20px 0;
+    margin-left: 100px; /* 왼쪽 정렬 맞추기 */
+    font-size: 16px;
+}
+
+.sub-menu-categories a {
+    color: #666;
+    text-decoration: none;
+    padding: 5px 0;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.sub-menu-categories a:hover,
+.sub-menu-categories a:first-child {
+    color: #000;
+    border-bottom-color: #000;
 }
