@@ -6,6 +6,8 @@
     <title>TAMBURINS</title>
     <!-- 메인 CSS -->
     <link rel="stylesheet" href="./css/main.css" />
+    <!-- 메인 미디어쿼리 -->
+    <link rel="stylesheet" href="./css/media_main.css" />
     <!-- 제이쿼리 -->
     <script src="./js/jquery-3.7.1.min.js"></script>
     <!-- 외부JS -->
@@ -47,7 +49,7 @@
                         <div class="product-images">
                           <ol>
                             <li
-                              onclick="window.open('sunshine-all.html', '_blank');"
+                              onclick="location.href='sunshine-all.html'"
                             >
                               <img
                                 src="./images/SUNSHINE.01.jpg"
@@ -198,7 +200,6 @@
                     </div>
                   </li>
                   <li>
-                    
                     <a href="">HOME FRAGRANCE</a>
                     <div class="sub-menu">
                       <div class="padding-box">
@@ -211,10 +212,15 @@
                               />
                               <span>카 디퓨저</span>
                             </li>
-                           <li onclick="window.open('HOME FRAGRANCE.html', '_blank');">
-<img src="./images/HOME FRAGRANCE.02.jpg" alt="제품1">
-<span>룸 프래그런스</span>
-</li>
+                            <li
+                              onclick="window.open('HOME FRAGRANCE.html', '_blank');"
+                            >
+                              <img
+                                src="./images/HOME FRAGRANCE.02.jpg"
+                                alt="제품1"
+                              />
+                              <span>룸 프래그런스</span>
+                            </li>
                             <li>
                               <img
                                 src="./images/HOME FRAGRANCE.03.jpg"
@@ -233,7 +239,9 @@
                       <div class="padding-box">
                         <div class="product-images">
                           <ol>
-                            <li>
+                            <li
+                              onclick="window.open('store-korea.html', '_blank');"
+                            >
                               <img src="./images/STORE.01.png" alt="스토어" />
                               <span>대한민국</span>
                             </li>
@@ -259,6 +267,27 @@
             </div>
           </section>
         </div>
+        <button style="
+        position: absolute;
+        right: 2vw;
+        top: 3vh;
+        "
+        onclick="
+        
+
+        if(this.innerText === '햄버거'){
+        this.innerText = '닫기';
+        document.querySelector('.menu-box').style.left = '0';
+        document.querySelector('.menu-box').style.transition = '.4s ease-in-out';
+      }
+      else{
+        this.innerText = '햄버거';
+        document.querySelector('.menu-box').style.left = '100%';
+        document.querySelector('.menu-box').style.transition = '.4s ease-in-out';
+      
+      }
+        "
+        >햄버거</button>
       </header>
     </div>
 
@@ -319,7 +348,7 @@
           <div class="footer-column">
             <h3>매장안내</h3>
             <ul>
-              <li><a href="#">대한민국</a></li>
+              <li><a href="store-korea.html">대한민국</a></li>
               <li><a href="#">일본</a></li>
               <li><a href="#">중국</a></li>
               <li><a href="#">전시</a></li>

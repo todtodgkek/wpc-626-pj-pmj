@@ -1,0 +1,49 @@
+@charset 'utf-8';
+/* 메인 미디어쿼리 */
+
+/* 최대1200px 이하 사이즈 시작 */
+@media (max-width: 1200px) {
+  .menu-box {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+  }
+  .menu-group {
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding-top: 10vh;
+    padding-left: 5vw;
+  }
+  .menu-group ul {
+    flex-direction: column;
+  }
+}
+/* 최대1200px 이하 사이즈 종료 */
+
+/* 최대1024px 이하 사이즈 시작 */
+@media (max-width: 1024px) {
+  .video-part {
+    height: auto;
+    aspect-ratio: 12 / 9;
+  }
+  .perfune-section {
+    height: auto;
+  }
+  .perfune-container {
+    flex-direction: column;
+    height: auto;
+  }
+  .perfune-container aside {
+    flex-basis: 100%;
+    aspect-ratio: 1;
+  }
+}
+/* 최대1024px 이하 사이즈 종료 */
+
+/* 최대800px 이하 사이즈 시작 */
+@media (max-width: 800px) {
+}
+/* 최대800px 이하 사이즈 종료 */
