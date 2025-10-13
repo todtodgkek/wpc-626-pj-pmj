@@ -3,6 +3,10 @@
 
 /* 최대1200px 이하 사이즈 시작 */
 @media (max-width: 1200px) {
+  /* 햄버거 버튼 보이기 */
+  .btn-ham-close {
+    display: block;
+  }
   .menu-box {
     position: fixed;
     top: 0;
@@ -10,15 +14,25 @@
     width: 100%;
     height: 100vh;
     background-color: gray;
+    transition: left 0.3s ease-in;
+  }
+  /* 클래스 on을 주면 메뉴등장 */
+  .menu-box.on {
+    left: 0;
   }
   .menu-group {
     justify-content: flex-start;
     box-sizing: border-box;
     padding-top: 10vh;
-    padding-left: 5vw;
   }
   .menu-group ul {
     flex-direction: column;
+    padding-left: 5vw;
+  }
+
+  /* 서브메뉴 */
+  .sub-menu {
+    position: relative;
   }
 }
 /* 최대1200px 이하 사이즈 종료 */

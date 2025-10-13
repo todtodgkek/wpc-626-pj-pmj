@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TAMBURINS</title>
+    <!-- 폰트어썸CDN -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- 메인 CSS -->
     <link rel="stylesheet" href="./css/main.css" />
     <!-- 메인 미디어쿼리 -->
@@ -266,24 +268,9 @@
           </section>
         </div>
         <button
-          style="position: absolute; right: 2vw; top: 3vh"
-          onclick="
-        
-
-        if(this.innerText === '햄버거'){
-        this.innerText = '닫기';
-        document.querySelector('.menu-box').style.left = '0';
-        document.querySelector('.menu-box').style.transition = '.4s ease-in-out';
-      }
-      else{
-        this.innerText = '햄버거';
-        document.querySelector('.menu-box').style.left = '100%';
-        document.querySelector('.menu-box').style.transition = '.4s ease-in-out';
-      
-      }
-        "
-        >
-          햄버거
+        class="btn-ham-close">
+        <i class="fa-solid fa-xmark"></i>
+          <i class="fa-solid fa-bars"></i>
         </button>
       </header>
     </div>
