@@ -73,6 +73,7 @@ body * {
   color: white;
 }
 
+
 /* 상위 메뉴 li오버시 a요소 글자 검정색 */
 #top-area.on .gnb-menu > ul > li > a {
   color: rgb(0, 0, 0);
