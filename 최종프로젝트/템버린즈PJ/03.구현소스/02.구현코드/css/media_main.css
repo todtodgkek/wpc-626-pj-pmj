@@ -1,11 +1,15 @@
-@charset 'utf-8';
+@charset "utf-8";
 /* 메인 미디어쿼리 */
 
-/* 최대1200px 이하 사이즈 시작 */
-@media (max-width: 1200px) {
+/* 최대1300px 이하 사이즈 시작 */
+@media (max-width: 1300px) {
   /* 햄버거 버튼 보이기 */
   .btn-ham-close {
     display: block;
+  }
+  /* 장바구니, 로그인 없어지기 */
+  .btn-grp-box {
+    display: none;
   }
   .menu-box {
     position: fixed;
