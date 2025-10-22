@@ -171,6 +171,26 @@ body * {
   margin-bottom: 2.4rem;
 }
 
+/* 타이틀바 소속 버튼 */
+.btn-grp-box {
+  position: absolute;
+  top: 3vh;
+  right: 1vw;
+  display: flex;
+  gap: 10px;
+}
+.btn-grp-box button {
+
+  background-color: transparent;
+  border: none;
+  font-size: 2.5vh;
+  cursor: pointer;
+  color: #fff;
+  /* DT에서 안보임 */
+  /* display: none; */
+}
+
+
 /***************** 2. 메인영역 *****************/
 /***************** 2-1. 배너영역 *****************/
 .video-part {
@@ -421,4 +441,12 @@ body {
 .sub-menu-categories a:first-child {
   color: #000;
   border-bottom-color: #000;
+}
+
+
+.footer-menu {
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 0;
+  gap: 0;
 }

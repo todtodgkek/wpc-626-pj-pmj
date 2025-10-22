@@ -82,72 +82,24 @@
         text-align: left;
       }
     </style>
+    <!-- 공통 미디어쿼리 -->
+    <link rel="stylesheet" href="./css/common_media.css" />
+    <!-- 제이쿼리 -->
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <!-- 공통 서브 JS -->
+    <script src="./js/common_sub.js" defer></script>
   </head>
   <body>
     <!-- 상단 고정 네비게이션 -->
-    <div
-      style="
-        background: white;
-        padding: 20px 60px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        border-bottom: 1px solid #eee;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 9999;
-        box-sizing: border-box;
-        gap: 80px;
-      "
-    >
-      <a
-        href="index.html"
-        style="
-          text-decoration: none;
-          color: #000;
-          font-size: 24px;
-          font-weight: bold;
-        "
-        >TAMBURINS</a
-      >
-      <div style="display: flex; gap: 30px; font-size: 14px">
-        <a
-          href="sunshine-all.html"
-          style="text-decoration: none; color: #666; white-space: nowrap"
-          >SUNSHINE</a
-        >
-        <a
-          href="#"
-          style="text-decoration: none; color: #666; white-space: nowrap"
-          >PERFUME</a
-        >
-        <a
-          href="#"
-          style="text-decoration: none; color: #666; white-space: nowrap"
-          >HAND&LIP</a
-        >
-        <a
-          href="#"
-          style="text-decoration: none; color: #666; white-space: nowrap"
-          >BODY</a
-        >
-        <a
-          href="#"
-          style="
-            text-decoration: none;
-            color: #000;
-            font-weight: 600;
-            white-space: nowrap;
-          "
-          >HOME FRAGRANCE</a
-        >
-        <a
-          href="#"
-          style="text-decoration: none; color: #666; white-space: nowrap"
-          >STORE</a
-        >
+    <div class="sub-menu-box">
+      <a href="#">TAMBURINS</a>
+      <div>
+        <a href="#">SUNSHINE</a>
+        <a href="#">PERFUME</a>
+        <a href="#">HAND&LIP</a>
+        <a href="#">BODY</a>
+        <a href="#">HOME FRAGRANCE</a>
+        <a href="#">STORE</a>
       </div>
     </div>
 

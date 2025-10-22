@@ -10,10 +10,8 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
+   
     <!-- 메인 CSS -->
     <link rel="stylesheet" href="./css/main.css" />
     <!-- 메인 미디어쿼리 -->
@@ -22,6 +20,7 @@
     <script src="./js/jquery-3.7.1.min.js"></script>
     <!-- 외부JS -->
     <script src="./js/main.js" defer></script>
+    <script src="./js/common.js" defer></script>
   </head>
   <body>
     <!-- 1. 상단영역 -->
@@ -58,7 +57,7 @@
                       <div class="padding-box">
                         <div class="product-images">
                           <ol>
-                            <li onclick="location.href='sunshine-all.html'">
+                            <li>
                               <img
                                 src="./images/SUNSHINE.01.jpg"
                                 alt="선케어 제품1"
@@ -104,9 +103,7 @@
                               />
                               <span>퍼퓸</span>
                             </li>
-                            <li
-                              onclick="window.open('perfume-oil.html', '_blank');"
-                            >
+                            <li>
                               <img
                                 src="./images/PERFUME.02.jpg"
                                 alt="향수 제품2"
@@ -138,9 +135,7 @@
                       <div class="padding-box">
                         <div class="product-images">
                           <ol>
-                            <li
-                              onclick="window.open('shell-perfume-hand.html', '_blank');"
-                            >
+                            <li>
                               <img
                                 src="./images/HAND&LIP.01.jpg"
                                 alt="핸드 제품1"
@@ -186,9 +181,7 @@
                               />
                               <span>퍼퓸 데오드란트</span>
                             </li>
-                            <li
-                              onclick="window.open('shower-body.html', '_blank');"
-                            >
+                            <li>
                               <img
                                 src="./images/BODY.02.jpg"
                                 alt="바디 제품2"
@@ -220,9 +213,7 @@
                               />
                               <span>카 디퓨저</span>
                             </li>
-                            <li
-                              onclick="window.open('HOME FRAGRANCE.html', '_blank');"
-                            >
+                            <li>
                               <img
                                 src="./images/HOME FRAGRANCE.02.jpg"
                                 alt="제품1"
@@ -247,9 +238,7 @@
                       <div class="padding-box">
                         <div class="product-images">
                           <ol>
-                            <li
-                              onclick="window.open('store-korea.html', '_blank');"
-                            >
+                            <li>
                               <img src="./images/STORE.01.png" alt="스토어" />
                               <span>대한민국</span>
                             </li>
@@ -279,6 +268,10 @@
           <i class="fa-solid fa-xmark"></i>
           <i class="fa-solid fa-bars"></i>
         </button>
+        <div class="btn-grp-box">
+          <button class="fa-solid fa-bag-shopping"></button>
+          <button class="fa-regular fa-user"></button>
+        </div>
       </header>
     </div>
 
