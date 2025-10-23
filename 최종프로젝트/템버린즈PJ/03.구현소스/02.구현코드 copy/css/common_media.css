@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+/* 공통 셋팅 변경 */
+.product img {
+  height: auto;
+}
+
+.sub-menu-box {
+  background: white;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  box-sizing: border-box;
+  gap: 80px;
+}
+.sub-menu-box > a {
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+}
+.sub-menu-box > div {
+  display: flex;
+  gap: 30px;
+  font-size: 14px;
+}
+
+.sub-menu-box > div > a {
+  text-decoration: none;
+  color: #666;
+  white-space: nowrap;
+}
+
+footer > div {
+  flex-wrap: wrap;
+}
+
+/* 공통 미디어쿼리 */
+
+@media (max-width: 1200px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 1000px) {
+  .sub-menu-box {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .sub-menu-box > div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .header {
+    padding: 20px 0 100px;
+  }
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .category-nav {
+    flex-direction: column;
+    margin-top: 5vh;
+  }
+  .sub-categories {
+    white-space: nowrap;
+  }
+}
