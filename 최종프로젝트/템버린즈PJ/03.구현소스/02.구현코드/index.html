@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TAMBURINS</title>
 
-   
     <!-- 폰트어썸CDN -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
-   
+
     <!-- 메인 CSS -->
     <link rel="stylesheet" href="./css/main.css" />
     <!-- 메인 미디어쿼리 -->
@@ -269,10 +268,55 @@
           <i class="fa-solid fa-bars"></i>
         </button>
         <div class="btn-grp-box">
+          <button class="fa-solid fa-magnifying-glass" id="searchBtn"></button>
           <button class="fa-solid fa-bag-shopping"></button>
           <button class="fa-regular fa-user"></button>
         </div>
       </header>
+    </div>
+    <!-- 검색 오버레이 -->
+    <div class="search-overlay" id="searchOverlay">
+      <div class="search-panel">
+        <button class="search-close" id="searchClose">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="search-input-wrapper">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            placeholder="'선사인'을 검색해 보세요."
+            id="searchInput"
+          />
+        </div>
+
+        <div class="search-content">
+          <h3>제안</h3>
+          <ul class="search-suggestions">
+            <li>퍼퓸 리미티드 선사인</li>
+            <li>퍼퓸 선사인</li>
+            <li>퍼퓸 오일 선사인</li>
+            <li>선사인 퍼퓸 웨어</li>
+            <li>퍼퓸 밤 선사인</li>
+          </ul>
+
+          <h3>특별한 제택</h3>
+          <div class="special-product">
+            <div class="product-slider">
+              <button class="slider-btn prev">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <img src="./images/검색.jpg" alt="특별 제품" />
+              <button class="slider-btn next">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+            <p class="product-info">
+              11/3 - 11/17<br />7일일 이상 구매 시 '퍼퓸 밤 오드캐' 증정
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- 2. 메인영역 -->

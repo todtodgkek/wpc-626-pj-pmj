@@ -24,3 +24,29 @@ $('.btn-ham-close').click(function(){
     // 메뉴박스가 화면에 나오게 하기
     $('.menu-box').toggleClass('on');
 });
+// 검색 오버레이 열기
+document.getElementById('searchBtn').addEventListener('click', function() {
+  document.getElementById('searchOverlay').classList.add('active');
+  setTimeout(() => {
+    document.getElementById('searchInput').focus();
+  }, 300);
+});
+
+// 검색 오버레이 닫기
+document.getElementById('searchClose').addEventListener('click', function() {
+  document.getElementById('searchOverlay').classList.remove('active');
+});
+
+// 오버레이 배경 클릭시 닫기
+document.getElementById('searchOverlay').addEventListener('click', function(e) {
+  if (e.target === this) {
+    this.classList.remove('active');
+  }
+});
+
+// ESC 키로 닫기
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    document.getElementById('searchOverlay').classList.remove('active');
+  }
+});
