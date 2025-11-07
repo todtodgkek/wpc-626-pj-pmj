@@ -270,7 +270,7 @@
         <div class="btn-grp-box">
           <button class="fa-solid fa-magnifying-glass" id="searchBtn"></button>
           <button class="fa-solid fa-bag-shopping"></button>
-          <button class="fa-regular fa-user"></button>
+          <button class="fa-regular fa-user" id="loginBtn"></button>
         </div>
       </header>
     </div>
@@ -300,21 +300,72 @@
             <li>퍼퓸 밤 선사인</li>
           </ul>
 
-          <h3>특별한 제택</h3>
+          <h3>특별한 혜택</h3>
           <div class="special-product">
             <div class="product-slider">
-              <button class="slider-btn prev">
+              <button class="slider-btn prev" id="prevBtn">
                 <i class="fa-solid fa-chevron-left"></i>
               </button>
-              <img src="./images/검색.jpg" alt="특별 제품" />
-              <button class="slider-btn next">
+              <img src="./images/검색.jpg" alt="특별 제품" id="sliderImg" />
+              <button class="slider-btn next" id="nextBtn">
                 <i class="fa-solid fa-chevron-right"></i>
               </button>
             </div>
-            <p class="product-info">
+            <p class="product-info" id="sliderText">
               11/3 - 11/17<br />7일일 이상 구매 시 '퍼퓸 밤 오드캐' 증정
             </p>
           </div>
+        </div>
+      </div>
+    </div>
+    <!-- 로그인 오버레이 -->
+    <div class="login-overlay" id="loginOverlay">
+      <div class="login-content">
+        <div class="login-icon">
+          <i class="fa-regular fa-user"></i>
+        </div>
+
+        <div class="login-tabs">
+          <button class="tab-btn active" data-tab="login">로그인</button>
+          <button class="tab-btn" data-tab="nonmember">비회원 주문조회</button>
+        </div>
+
+        <div class="tab-content active" id="login-tab">
+          <form class="login-form">
+            <input
+              type="text"
+              placeholder="아이디(이메일)"
+              class="login-input"
+            />
+            <input type="password" placeholder="비밀번호" class="login-input" />
+
+            <button type="submit" class="login-submit">로그인</button>
+
+            <div class="login-links">
+              <a href="#">아이디 찾기</a>
+              <span>|</span>
+              <a href="#">비밀번호 찾기</a>
+              <span>|</span>
+              <a href="#">회원가입</a>
+            </div>
+
+            <div class="social-login">
+              <button type="button" class="kakao-login">
+                <i class="fa-solid fa-comment"></i>
+                카카오 로그인
+              </button>
+              <button type="button" class="naver-login">
+                <strong>N</strong>
+                네이버 로그인
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="tab-content" id="nonmember-tab">
+          <p style="text-align: center; color: #999; padding: 40px 0">
+            비회원 주문조회
+          </p>
         </div>
       </div>
     </div>
