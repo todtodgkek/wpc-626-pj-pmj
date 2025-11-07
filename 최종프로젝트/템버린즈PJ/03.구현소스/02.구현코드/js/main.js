@@ -59,14 +59,19 @@ document.addEventListener("keydown", function (e) {
   }
 });
 // 로그인 오버레이 열기
-document.getElementById("loginBtn").addEventListener("click", function () {
-  document.getElementById("loginOverlay").classList.add("active");
+document.getElementById('loginBtn').addEventListener('click', function() {
+  document.getElementById('loginOverlay').classList.add('active');
+});
+
+// 로그인 X 버튼으로 닫기
+document.getElementById('loginClose').addEventListener('click', function() {
+  document.getElementById('loginOverlay').classList.remove('active');
 });
 
 // 로그인 오버레이 닫기 (배경 클릭시)
-document.getElementById("loginOverlay").addEventListener("click", function (e) {
+document.getElementById('loginOverlay').addEventListener('click', function(e) {
   if (e.target === this) {
-    this.classList.remove("active");
+    this.classList.remove('active');
   }
 });
 
