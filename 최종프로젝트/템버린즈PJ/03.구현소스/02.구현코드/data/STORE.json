@@ -1,0 +1,178 @@
+{
+  "country": "대한민국",
+  "stores": {
+    "flagship_stores": [
+      {
+        "id": 1,
+        "name": "탬버린즈 하우스 노웨어 서울",
+        "address": "서울특별시 성동구 뚝섬로 433, 하우스노웨어 3층",
+        "phone": "+82 1644 5704",
+        "hours": "월-일 11:00 am - 9:00 pm",
+        "type": "flagship",
+        "image": "images/Store_01.jpg"
+      },
+      {
+        "id": 2,
+        "name": "탬버린즈 서울 한남",
+        "address": "서울특별시 용산구 이태원로 238",
+        "phone": "+82 70-4101-3274",
+        "hours": "월-일 11:00 am - 9:00 pm",
+        "type": "flagship",
+        "image": "images/store_02.jpg"
+      },
+      {
+        "id": 3,
+        "name": "탬버린즈 서울 성수",
+        "address": "서울 성동구 연무장5길 8",
+        "phone": "+82 70 4266 6142",
+        "hours": "월-일 11:00am - 9:00pm",
+        "type": "flagship",
+        "image": "images/store_03.jpg"
+      },
+      {
+        "id": 4,
+        "name": "탬버린즈 서울 삼청",
+        "address": "서울 종로구 율곡로3길 84",
+        "phone": "+82 70 4139 7450",
+        "hours": "월-일 11:00am - 8:00pm",
+        "type": "flagship",
+        "image": "images/store.04.jpg"
+      },
+      {
+        "id": 5,
+        "name": "탬버린즈 하우스 노웨어 도산",
+        "address": "서울 강남구 도산대로 45길 14",
+        "phone": "+82 02 511 1246",
+        "hours": "월-일 11:00am - 9:00pm",
+        "type": "flagship",
+        "media": "images/store.05.mp4",
+        "mediaType": "video"
+      },
+      {
+        "id": 6,
+        "name": "탬버린즈 서울 신사",
+        "address": "서울 강남구 압구정로10길 44",
+        "phone": "+82 02 511 1246",
+        "hours": "월-일 11:00am - 9:00pm",
+        "type": "flagship",
+        "image": "images/store.06.jpg"
+      }
+    ],
+    "department_duty_free": [
+      {
+        "id": 1,
+        "name": "탬버린즈 롯데 서면",
+        "address": "부산광역시 부산진구 가야대로 772 롯데백화점 부산본점 1층 탬버린즈",
+        "phone": "+82 05 4810 2110",
+        "hours": "월-목 10:30am-8:00pm / 금-일,공휴일 10:30am-8:30pm",
+        "type": "department_store"
+      },
+      {
+        "id": 2,
+        "name": "탬버린즈 신라 제주 면세점",
+        "address": "제주특별자치도 제주시 노연로 69 신라면세점 제주점 3F",
+        "phone": "064 710 7388",
+        "hours": "월~일 10:30am - 7:30pm",
+        "type": "duty_free"
+      },
+      {
+        "id": 3,
+        "name": "탬버린즈 롯데 월드타워 잠실",
+        "address": "서울특별시 송파구 올림픽로 300, 롯데월드몰 1층",
+        "phone": "+82 70-4119-1227",
+        "hours": "월-일 10:30am - 10:00pm",
+        "type": "department_store"
+      },
+      {
+        "id": 4,
+        "name": "탬버린즈 신세계 인천국제공항 T2 면세점",
+        "address": "인천광역시 중구 공항로 272, 인천국제공항 제2여객터미널 신세계 면세점 3F",
+        "phone": "+82 032 743 4750",
+        "hours": "월-일 6:30am-9:30pm",
+        "type": "duty_free"
+      },
+      {
+        "id": 5,
+        "name": "탬버린즈 신라 인천국제공항 T1 면세점",
+        "address": "인천광역시 중구 공항로 271, 인천국제공항 제1여객터미널 신라면세점 3F",
+        "phone": "+82 032 743 4467",
+        "hours": "월-일 6:30am-9:30pm",
+        "type": "duty_free"
+      },
+      {
+        "id": 6,
+        "name": "탬버린즈 신세계 명동 면세점",
+        "address": "서울 중구 퇴계로 77 신세계백화점 본점 04583 10F",
+        "phone": "+82 02 6370 4182",
+        "hours": "월-목 10:30am-8:00pm / 금-일,공휴일 10:30am-8:30pm",
+        "type": "duty_free"
+      },
+      {
+        "id": 7,
+        "name": "탬버린즈 신세계 강남",
+        "address": "서울특별시 서초구 신반포로 176 (반포동) 1F",
+        "phone": "+82 02 3479 1275",
+        "hours": "월-목 10:30am-8:00pm / 금-일,공휴일 10:30am~8:30pm",
+        "type": "department_store"
+      },
+      {
+        "id": 8,
+        "name": "탬버린즈 신세계 센텀시티",
+        "address": "부산 해운대구 센텀남대로 35 신세계백화점 센텀시티점 1F",
+        "phone": "+82 051 745 1398",
+        "hours": "월-목 10:30am-8:00pm / 금-일,공휴일 10:30am-8:30pm",
+        "type": "department_store"
+      },
+      {
+        "id": 9,
+        "name": "탬버린즈 롯데 명동",
+        "address": "서울 중구 남대문로 81 롯데백화점 본점 B1F",
+        "phone": "+82 02 772 3905",
+        "hours": "월-목 10:30am-8:00pm / 금-일,공휴일 10:30am-8:30pm",
+        "type": "department_store"
+      },
+      {
+        "id": 10,
+        "name": "탬버린즈 현대 판교",
+        "address": "경기도 성남시 분당구 판교역로146번길 20 (1F)",
+        "phone": "+82 031 5170 1153",
+        "hours": "월-목 10:30am-8:00pm / 금-일,공휴일 10:30am-8:30pm",
+        "type": "department_store"
+      },
+      {
+        "id": 11,
+        "name": "탬버린즈 더현대 서울",
+        "address": "서울 영등포구 여의대로 108 1F",
+        "phone": "+82 02 3277 8593",
+        "hours": "월-목 10:30am-8:00pm / 금-일, 공휴일 10:30am-8:30pm",
+        "type": "department_store"
+      },
+      {
+        "id": 12,
+        "name": "탬버린즈 롯데 명동 면세점",
+        "address": "서울 중구 을지로 30 12F",
+        "phone": "+82 70 4240 9664",
+        "hours": "월-일 9:30am-8:00pm",
+        "type": "duty_free"
+      }
+    ],
+    "stockists": [
+      {
+        "id": 1,
+        "name": "시코르 AK 플라자 홍대점",
+        "address": "서울특별시 마포구 양화로 188 AK플라자 1층",
+        "phone": "+82 02 789 9810",
+        "hours": "월-일 10:30am-10:00pm",
+        "type": "stockist"
+      },
+      {
+        "id": 2,
+        "name": "시코르 강남역점",
+        "address": "서울특별시 강남구 강남대로 408 1층",
+        "phone": "+82 02 501 6281",
+        "hours": "월-일 10:00am-11:00pm",
+        "type": "stockist"
+      }
+    ]
+  }
+}

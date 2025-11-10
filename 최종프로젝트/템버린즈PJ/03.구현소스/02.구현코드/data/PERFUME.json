@@ -1,0 +1,51 @@
+{
+  "category": "PERFUME",
+  "subCategory": "퍼퓸 오일",
+  "products": [
+    {
+      "id": 1,
+      "name": "퍼퓸 오일 선샤인",
+      "description": "안젤리카ㅣ뮤게ㅣ클라우드 아머",
+      "price": 43500,
+      "currency": "KRW",
+      "status": "available",
+      "image": "./images/전체보기.04.png"
+    },
+    {
+      "id": 2,
+      "name": "퍼퓸 오일 블루히노키",
+      "description": "시원한 아키갈라우드 | 부드러운 이끼와 버섯 | 앰버 머스크",
+      "price": 43500,
+      "currency": "KRW",
+      "status": "available",
+      "image": "./images/퍼퓸오일.02.png"
+    },
+    {
+      "id": 3,
+      "name": "퍼퓸 오일 보타리",
+      "description": "너티 우드ㅣ블루 카모마일ㅣ루미너스 알데하이드",
+      "price": 43500,
+      "currency": "KRW",
+      "status": "available",
+      "image": "./images/퍼퓸오일.03.png"
+    },
+    {
+      "id": 4,
+      "name": "레더 웨어 퍼퓸 오일 화이트",
+      "description": "레더 웨어 퍼퓸 오일 화이트 케이스",
+      "price": 55000,
+      "currency": "KRW",
+      "status": "available",
+      "image": "./images/퍼퓸오일.04.png"
+    },
+    {
+      "id": 5,
+      "name": "레더 웨어 퍼퓸 오일 블랙",
+      "description": "레더 웨어 퍼퓸 오일 블랙 케이스",
+      "price": 55000,
+      "currency": "KRW",
+      "status": "available",
+      "image": "./images/퍼퓸오일.05.png"
+    }
+  ]
+}

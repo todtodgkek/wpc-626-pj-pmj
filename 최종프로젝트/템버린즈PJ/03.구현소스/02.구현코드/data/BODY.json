@@ -1,0 +1,126 @@
+{
+  "category": "BODY",
+  "subCategory": "샤워리바디",
+  "products": [
+    {
+      "id": 1,
+      "name": "샤워리바디워시 얼리모닝듀",
+      "description": "애플민트ㅣ신선한 월계수ㅣ이른 아침의 청량함",
+      "price": 34500,
+      "currency": "KRW",
+      "status": "available",
+      "productType": "wash",
+      "image": "./images/샤워리바디.01.png"
+    },
+    {
+      "id": 2,
+      "name": "샤워리바디워시 비가리코",
+      "description": "씁쓸한 오렌지 | 시더우드 | 달콤한 리코라이스",
+      "price": 34500,
+      "currency": "KRW",
+      "status": "available",
+      "productType": "wash",
+      "image": "./images/샤워리바디.02.png"
+    },
+    {
+      "id": 3,
+      "name": "샤워리바디워시 포그",
+      "description": "물안개 낀 숲 | 젖은 나무 | 캐시미어 우드",
+      "price": 34500,
+      "currency": "KRW",
+      "status": "available",
+      "productType": "wash",
+      "image": "./images/샤워리바디.03.png"
+    },
+    {
+      "id": 4,
+      "name": "샤워리바디워시 님버스",
+      "description": "도넛피치 | 어린 코코넛의 풋내음 | 포근한 머스크",
+      "price": 34500,
+      "currency": "KRW",
+      "status": "available",
+      "productType": "wash",
+      "image": "./images/샤워리바디.04.png"
+    },
+    {
+      "id": 5,
+      "name": "샤워리바디 듀오 블루히노키",
+      "description": "상쾌한 파인오일ㅣ푸른 히노키ㅣ드리프트우드",
+      "price": 70000,
+      "currency": "KRW",
+      "status": "available",
+      "productType": "duo_set",
+      "image": "./images/샤워리바디.05.png"
+    },
+    {
+      "id": 6,
+      "name": "샤워리바디 듀오 얼리모닝듀",
+      "description": "애플민트 | 신선한 월계수 | 이른 아침의 청량함",
+      "price": 70000,
+      "currency": "KRW",
+      "status": "available",
+      "productType": "duo_set",
+      "image": "./images/샤워리바디.06.png"
+    },
+    {
+      "id": 7,
+      "name": "샤워리바디 듀오 비가리코",
+      "description": "씁쓸한 오렌지ㅣ시더우드ㅣ달콤한 리코라이스",
+      "price": 70000,
+      "currency": "KRW",
+      "status": "available",
+      "productType": "duo_set",
+      "image": "./images/샤워리바디.07.png"
+    },
+    {
+      "id": 8,
+      "name": "샤워리바디 듀오 님버스",
+      "description": "도넛피치ㅣ어린코코넛의 풋내음ㅣ포근한 머스크",
+      "price": 70000,
+      "currency": "KRW",
+      "status": "available",
+      "productType": "duo_set",
+      "image": "./images/샤워리바디.08.png"
+    },
+    {
+      "id": 9,
+      "name": "샤워리바디로션 블루히노키",
+      "description": "상쾌한 파인오일ㅣ푸른 히노키ㅣ드리프트우드",
+      "price": 39000,
+      "currency": "KRW",
+      "status": "available",
+      "productType": "lotion",
+      "image": "./images/샤워리바디.09.png"
+    },
+    {
+      "id": 10,
+      "name": "샤워리바디로션 얼리모닝듀",
+      "description": "애플민트ㅣ신선한 월계수ㅣ이른 아침의 청량함",
+      "price": 39000,
+      "currency": "KRW",
+      "status": "available",
+      "productType": "lotion",
+      "image": "./images/샤워리바디.10.png"
+    },
+    {
+      "id": 11,
+      "name": "샤워리바디로션 비가리코",
+      "description": "씁쓸한 오렌지 | 시더우드 | 달콤한 리코라이스",
+      "price": 39000,
+      "currency": "KRW",
+      "status": "available",
+      "productType": "lotion",
+      "image": "./images/샤워리바디.11.png"
+    },
+    {
+      "id": 12,
+      "name": "샤워리바디로션 님버스",
+      "description": "도넛피치 | 어린 코코넛의 풋내음 | 포근한 머스크",
+      "price": 39000,
+      "currency": "KRW",
+      "status": "available",
+      "productType": "lotion",
+      "image": "./images/샤워리바디.12.png"
+    }
+  ]
+}

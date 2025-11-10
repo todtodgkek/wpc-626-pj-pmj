@@ -1,0 +1,77 @@
+{
+  "category": "HOME FRAGRANCE",
+  "subCategory": "룸 프레그런스",
+  "products": [
+    {
+      "id": 1,
+      "name": "퍼퓸 본 선샤인",
+      "description": "안젤리카ㅣ뮤게ㅣ클라우드 아머",
+      "price": 58000,
+      "currency": "KRW",
+      "status": "available",
+      "productType": "perfume_bone",
+      "image": "./images/룸 프래그런스.01.png"
+    },
+    {
+      "id": 2,
+      "name": "퍼퓸 본 퍼피",
+      "description": "너티우드ㅣ블루 카모마일ㅣ루미너스 알데하이드",
+      "price": null,
+      "currency": "KRW",
+      "status": "out_of_stock",
+      "purchaseNote": "품절",
+      "productType": "perfume_bone",
+      "image": "./images/룸프래그런스.02.png"
+    },
+    {
+      "id": 3,
+      "name": "디퓨저 파피루스",
+      "description": "파피루스ㅣ그린트ㅣ샌달우드",
+      "price": 120000,
+      "currency": "KRW",
+      "status": "available",
+      "productType": "diffuser",
+      "image": "./images/룸프래그런스.03.png"
+    },
+    {
+      "id": 4,
+      "name": "디퓨저 파인네스트",
+      "description": "유칼립투스ㅣ파인니들ㅣ히노키우드",
+      "price": 120000,
+      "currency": "KRW",
+      "status": "available",
+      "productType": "diffuser",
+      "image": "./images/룸프래그런스.04.png"
+    },
+    {
+      "id": 5,
+      "name": "디퓨저 멈버드",
+      "description": "유자ㅣ국화ㅣ머스크",
+      "price": 120000,
+      "currency": "KRW",
+      "status": "available",
+      "productType": "diffuser",
+      "image": "./images/룸프래그런스.05.png"
+    },
+    {
+      "id": 6,
+      "name": "디퓨저 먹",
+      "description": "그을린 소나무ㅣ먹물ㅣ패출리",
+      "price": 120000,
+      "currency": "KRW",
+      "status": "available",
+      "productType": "diffuser",
+      "image": "./images/룸프래그런스.06.png"
+    },
+    {
+      "id": 7,
+      "name": "디퓨저 먹 리필",
+      "description": "그을린 소나무ㅣ먹물ㅣ패출리",
+      "price": 57000,
+      "currency": "KRW",
+      "status": "available",
+      "productType": "diffuser_refill",
+      "image": "./images/룸프래그런스.07.png"
+    }
+  ]
+}

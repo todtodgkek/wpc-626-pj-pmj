@@ -1,0 +1,119 @@
+{
+  "category": "SUNSHINE",
+  "products": [
+    {
+      "id": 1,
+      "name": "퍼퓸 리미티드 선샤인",
+      "description": "안젤리카ㅣ뮤게ㅣ클라우드 아머",
+      "price": 215000,
+      "currency": "KRW",
+      "status": "available",
+      "image": "./images/전체보기.01.png"
+    },
+    {
+      "id": 2,
+      "name": "퍼퓸 선샤인",
+      "description": "안젤리카ㅣ뮤게ㅣ클라우드 아머",
+      "price": 265000,
+      "currency": "KRW",
+      "status": "available",
+      "image": "./images/전체보기.02.png"
+    },
+    {
+      "id": 3,
+      "name": "퍼퓸 선샤인",
+      "description": "안젤리카ㅣ뮤게ㅣ클라우드 아머",
+      "price": 45000,
+      "currency": "KRW",
+      "status": "available",
+      "image": "./images/전체보기.03.png"
+    },
+    {
+      "id": 4,
+      "name": "퍼퓸 오일 선샤인",
+      "description": "안젤리카ㅣ뮤게ㅣ클라우드 아머",
+      "price": 43500,
+      "currency": "KRW",
+      "status": "available",
+      "image": "./images/전체보기.04.png"
+    },
+    {
+      "id": 5,
+      "name": "쉘 퍼퓸 핸드 선샤인",
+      "description": "안젤리카ㅣ뮤게ㅣ클라우드 아머",
+      "price": null,
+      "currency": "KRW",
+      "status": "kakao_only",
+      "purchaseNote": "카카오 구매",
+      "image": "./images/전체보기.05.png"
+    },
+    {
+      "id": 6,
+      "name": "쉘 퍼퓸 핸드 퍼피",
+      "description": "너티 우드ㅣ블루 카모마일ㅣ루미너스 알데하이드",
+      "price": null,
+      "currency": "KRW",
+      "status": "kakao_only",
+      "purchaseNote": "카카오 구매",
+      "image": "./images/전체보기.06.png"
+    },
+    {
+      "id": 7,
+      "name": "퍼퓸 본 선샤인",
+      "description": "안젤리카ㅣ뮤게ㅣ클라우드 아머",
+      "price": 58000,
+      "currency": "KRW",
+      "status": "available",
+      "image": "./images/전체보기.07.png"
+    },
+    {
+      "id": 8,
+      "name": "퍼퓸 캔들 선샤인",
+      "description": "안젤리카ㅣ뮤게ㅣ클라우드 아머",
+      "price": null,
+      "currency": "KRW",
+      "status": "offline_only",
+      "purchaseNote": "오프라인 한정 판매",
+      "image": "./images/전체보기.08.png"
+    },
+    {
+      "id": 9,
+      "name": "퍼퓸 캔들 퍼피",
+      "description": "너티 우드ㅣ블루 카모마일ㅣ루미너스 알데하이드",
+      "price": null,
+      "currency": "KRW",
+      "status": "offline_only",
+      "purchaseNote": "오프라인 한정 판매",
+      "image": "./images/전체보기.09.png"
+    },
+    {
+      "id": 10,
+      "name": "키링 웨어 퍼퓸 블랙",
+      "description": "퍼퓸 11mL 블랙 케이스 & 블랙 키링",
+      "price": null,
+      "currency": "KRW",
+      "status": "out_of_stock",
+      "purchaseNote": "일시 품절 - 입고 알림",
+      "image": "./images/전체보기.10.png"
+    },
+    {
+      "id": 11,
+      "name": "키링 웨어 퍼퓸 블루",
+      "description": "퍼퓸 11mL 블루 케이스 & 블랙 키링",
+      "price": null,
+      "currency": "KRW",
+      "status": "out_of_stock",
+      "purchaseNote": "일시 품절 - 입고 알림",
+      "image": "./images/전체보기.11.png"
+    },
+    {
+      "id": 12,
+      "name": "키링 웨어 퍼퓸 화이트",
+      "description": "퍼퓸 11mL 화이트 케이스 & 화이트 키링",
+      "price": 48000,
+      "currency": "KRW",
+      "status": "available",
+      "image": "./images/전체보기.12.png"
+    }
+  ]
+}

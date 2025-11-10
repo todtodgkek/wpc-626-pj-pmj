@@ -1,0 +1,122 @@
+{
+  "category": "HAND&LIP",
+  "subCategory": "쉘 퍼퓸 핸드",
+  "products": [
+    {
+      "id": 1,
+      "name": "쉘 퍼퓸 핸드 선샤인",
+      "description": "안젤리카ㅣ뮤게ㅣ클라우드 아머",
+      "price": null,
+      "currency": "KRW",
+      "status": "kakao_only",
+      "purchaseNote": "카카오 구매",
+      "image": "./images/쉘 퍼퓸 핸드.01.png"
+    },
+    {
+      "id": 2,
+      "name": "쉘 퍼퓸 핸드 이브닝글로우",
+      "description": "노을에 물든 장미 | 라즈베리 | 머스크",
+      "price": 32000,
+      "currency": "KRW",
+      "status": "available",
+      "image": "./images/쉘 퍼퓸 핸드.02.png"
+    },
+    {
+      "id": 3,
+      "name": "쉘 퍼퓸 핸드 카모",
+      "description": "진득한 카모마일 | 부드러운 나무결 | 머스크",
+      "price": 32000,
+      "currency": "KRW",
+      "status": "available",
+      "image": "./images/쉘 퍼퓸 핸드.03.png"
+    },
+    {
+      "id": 4,
+      "name": "쉘 퍼퓸 핸드 선샤인",
+      "description": "안젤리카ㅣ뮤게ㅣ클라우드 아머",
+      "price": null,
+      "currency": "KRW",
+      "status": "kakao_only",
+      "purchaseNote": "카카오 구매",
+      "image": "./images/쉘 퍼퓸 핸드.04.png"
+    },
+    {
+      "id": 5,
+      "name": "쉘 퍼퓸 핸드 퍼피",
+      "description": "너티 우드ㅣ블루 카모마일ㅣ루미너스 알데하이드",
+      "price": null,
+      "currency": "KRW",
+      "status": "out_of_stock",
+      "purchaseNote": "품절",
+      "image": "./images/쉘 퍼퓸 핸드.05.png"
+    },
+    {
+      "id": 6,
+      "name": "쉘 퍼퓸 핸드 퍼피",
+      "description": "너티 우드ㅣ블루 카모마일ㅣ루미너스 알데하이드",
+      "price": null,
+      "currency": "KRW",
+      "status": "out_of_stock",
+      "purchaseNote": "품절",
+      "image": "./images/쉘 퍼퓸 핸드.06.png"
+    },
+    {
+      "id": 7,
+      "name": "쉘 퍼퓸 핸드 이브닝글로우",
+      "description": "노을에 물든 장미 | 라즈베리 | 머스크",
+      "price": 18500,
+      "currency": "KRW",
+      "status": "available",
+      "image": "./images/쉘 퍼퓸 핸드.07.png"
+    },
+    {
+      "id": 8,
+      "name": "쉘 퍼퓸 핸드 카모",
+      "description": "진득한 카모마일ㅣ부드러운 나무결ㅣ머스크",
+      "price": 18500,
+      "currency": "KRW",
+      "status": "available",
+      "image": "./images/쉘 퍼퓸 핸드.08.png"
+    },
+    {
+      "id": 9,
+      "name": "쉘 퍼퓸 핸드 듀오 세트 (BLUE HINOKI & CHAMO)",
+      "description": "BLUE HINOKI & CHAMO",
+      "price": 35000,
+      "currency": "KRW",
+      "status": "available",
+      "productType": "set",
+      "image": "./images/쉘 퍼퓸 핸드.09.png"
+    },
+    {
+      "id": 10,
+      "name": "쉘 퍼퓸 핸드 듀오 세트 (EVENING GLOW & PUMKINI)",
+      "description": "EVENING GLOW & PUMKINI",
+      "price": 35000,
+      "currency": "KRW",
+      "status": "available",
+      "productType": "set",
+      "image": "./images/쉘 퍼퓸 핸드.10.png"
+    },
+    {
+      "id": 11,
+      "name": "쉘 퍼퓸 핸드 듀오 세트 (PUMKINI & FEY9)",
+      "description": "PUMKINI & FEY9",
+      "price": 35000,
+      "currency": "KRW",
+      "status": "available",
+      "productType": "set",
+      "image": "./images/쉘 퍼퓸 핸드.11.png"
+    },
+    {
+      "id": 12,
+      "name": "쉘 퍼퓸 핸드 듀오 세트 (CHAMO & VEIN)",
+      "description": "CHAMO & VEIN",
+      "price": 35000,
+      "currency": "KRW",
+      "status": "available",
+      "productType": "set",
+      "image": "./images/쉘 퍼퓸 핸드.12.png"
+    }
+  ]
+}
