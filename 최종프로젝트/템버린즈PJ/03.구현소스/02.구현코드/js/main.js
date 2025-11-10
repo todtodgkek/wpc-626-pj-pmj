@@ -133,3 +133,19 @@ function updateSlider() {
   document.getElementById("sliderText").innerHTML =
     sliderData[currentSlide].text;
 }
+// 장바구니 오버레이 열기
+document.getElementById('cartBtn').addEventListener('click', function() {
+  document.getElementById('cartOverlay').classList.add('active');
+});
+
+// 장바구니 오버레이 닫기
+document.getElementById('cartClose').addEventListener('click', function() {
+  document.getElementById('cartOverlay').classList.remove('active');
+});
+
+// 장바구니 오버레이 배경 클릭시 닫기
+document.getElementById('cartOverlay').addEventListener('click', function(e) {
+  if (e.target === this) {
+    this.classList.remove('active');
+  }
+});
