@@ -640,18 +640,16 @@ document.getElementById("cartOverlay").addEventListener("click", function (e) {
     console.log("검색 시스템 초기화 완료 - 총 제품:", allProducts.length);
   }
 
-  // 검색 결과 스타일 (여러 제품이 제대로 보이도록 수정)
+  // 검색 결과 스타일
   const style = document.createElement("style");
   style.id = "search-results-style";
   style.textContent = `
     .search-results {
       margin-top: 30px;
-      max-height: 500px;
-      overflow-y: auto;
-      padding: 10px;
+      padding: 10px 0;
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 15px;
     }
     
     .search-result-item {
@@ -665,7 +663,6 @@ document.getElementById("cartOverlay").addEventListener("click", function (e) {
       text-decoration: none;
       color: inherit;
       background: white;
-      min-height: 120px;
     }
     
     .search-result-item:hover {
@@ -677,7 +674,8 @@ document.getElementById("cartOverlay").addEventListener("click", function (e) {
     
     .search-result-item img {
       width: 120px;
-      height: 120px;
+      min-width: 120px;
+      height: auto;
       object-fit: cover;
       flex-shrink: 0;
       border-radius: 6px;
@@ -745,26 +743,6 @@ document.getElementById("cartOverlay").addEventListener("click", function (e) {
       background-color: #f5f5f5;
     }
 
-    /* 스크롤바 스타일 */
-    .search-results::-webkit-scrollbar {
-      width: 10px;
-    }
-    
-    .search-results::-webkit-scrollbar-track {
-      background: #f1f1f1;
-      border-radius: 10px;
-    }
-    
-    .search-results::-webkit-scrollbar-thumb {
-      background: #888;
-      border-radius: 10px;
-    }
-    
-    .search-results::-webkit-scrollbar-thumb:hover {
-      background: #555;
-    }
-
-    /* 모바일 반응형 */
     @media (max-width: 768px) {
       .search-result-item {
         flex-direction: column;
