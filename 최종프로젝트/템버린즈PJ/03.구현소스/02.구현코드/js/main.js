@@ -767,3 +767,295 @@ document.getElementById("cartOverlay").addEventListener("click", function (e) {
     setTimeout(initSearchSystem, 100);
   }
 })();
+// ========== 장바구니 기능 추가 ==========
+
+// 장바구니 데이터 로드
+function loadCart() {
+  const cart = localStorage.getItem('tamburins_cart');
+  return cart ? JSON.parse(cart) : [];
+}
+
+// 장바구니 데이터 저장
+function saveCart(cart) {
+  localStorage.setItem('tamburins_cart', JSON.stringify(cart));
+}
+
+// 장바구니에서 제품 제거
+function removeFromCart(productId) {
+  let cart = loadCart();
+  cart = cart.filter(item => item.id !== productId);
+  saveCart(cart);
+  updateCartDisplay();
+}
+
+// 수량 변경
+function updateQuantity(productId, change) {
+  const cart = loadCart();
+  const item = cart.find(item => item.id === productId);
+  
+  if (item) {
+    item.quantity += change;
+    if (item.quantity <= 0) {
+      removeFromCart(productId);
+    } else {
+      saveCart(cart);
+      updateCartDisplay();
+    }
+  }
+}
+
+// 총 금액 계산
+function calculateTotal(cart) {
+  return cart.reduce((total, item) => {
+    const price = parseInt(item.price.replace(/,/g, ''));
+    return total + (price * item.quantity);
+  }, 0);
+}
+
+// 장바구니 표시 업데이트
+function updateCartDisplay() {
+  const cart = loadCart();
+  const cartContent = document.querySelector('.cart-content');
+  const cartSubtitle = document.querySelector('.cart-subtitle');
+  
+  if (!cartContent) return;
+
+  if (cart.length === 0) {
+    cartSubtitle.textContent = '장바구니에 담긴 제품이 없습니다';
+    cartContent.innerHTML = `
+      <div class="empty-cart">
+        <p>장바구니가 비어 있습니다</p>
+      </div>
+    `;
+  } else {
+    cartSubtitle.textContent = `장바구니에 ${cart.length}개의 제품이 있습니다`;
+    
+    const total = calculateTotal(cart);
+    
+    cartContent.innerHTML = `
+      <div class="cart-items">
+        ${cart.map(item => `
+          <div class="cart-item" data-id="${item.id}">
+            <img src="${item.image}" alt="${item.name}">
+            <div class="cart-item-info">
+              <h4>${item.name}</h4>
+              <p class="cart-item-price">${item.price}원</p>
+              <div class="quantity-control">
+                <button class="qty-btn minus" data-id="${item.id}">-</button>
+                <span class="quantity">${item.quantity}</span>
+                <button class="qty-btn plus" data-id="${item.id}">+</button>
+              </div>
+            </div>
+            <button class="remove-btn" data-id="${item.id}" title="삭제">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        `).join('')}
+      </div>
+      <div class="cart-summary">
+        <div class="cart-total">
+          <span>총 금액</span>
+          <span class="total-price">${total.toLocaleString()}원</span>
+        </div>
+        <button class="checkout-btn">결제하기</button>
+      </div>
+    `;
+
+    // 삭제 버튼 이벤트
+    cartContent.querySelectorAll('.remove-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const productId = parseInt(btn.dataset.id);
+        removeFromCart(productId);
+      });
+    });
+
+    // 수량 감소 버튼
+    cartContent.querySelectorAll('.qty-btn.minus').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const productId = parseInt(btn.dataset.id);
+        updateQuantity(productId, -1);
+      });
+    });
+
+    // 수량 증가 버튼
+    cartContent.querySelectorAll('.qty-btn.plus').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const productId = parseInt(btn.dataset.id);
+        updateQuantity(productId, 1);
+      });
+    });
+
+    // 결제 버튼
+    cartContent.querySelector('.checkout-btn')?.addEventListener('click', () => {
+      alert('결제 기능은 준비 중입니다.');
+    });
+  }
+}
+
+// 장바구니 오버레이 이벤트
+const cartBtnMain = document.getElementById('cartBtn');
+const cartOverlayMain = document.getElementById('cartOverlay');
+const cartCloseMain = document.getElementById('cartClose');
+
+if (cartBtnMain) {
+  cartBtnMain.addEventListener('click', function() {
+    cartOverlayMain.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    updateCartDisplay();
+  });
+}
+
+if (cartCloseMain) {
+  cartCloseMain.addEventListener('click', function() {
+    cartOverlayMain.classList.remove('active');
+    document.body.style.overflow = '';
+  });
+}
+
+if (cartOverlayMain) {
+  cartOverlayMain.addEventListener('click', function(e) {
+    if (e.target === cartOverlayMain) {
+      cartOverlayMain.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  });
+}
+
+// 장바구니 스타일 추가
+const cartStyleSheet = document.createElement('style');
+cartStyleSheet.textContent = `
+  .cart-items {
+    max-height: calc(100vh - 300px);
+    overflow-y: auto;
+    padding: 20px 0;
+  }
+
+  .cart-item {
+    display: flex;
+    gap: 15px;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    position: relative;
+  }
+
+  .cart-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .cart-item-info {
+    flex: 1;
+  }
+
+  .cart-item-info h4 {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 0 8px 0;
+    color: #000;
+  }
+
+  .cart-item-price {
+    font-size: 14px;
+    color: #666;
+    margin: 0 0 12px 0;
+  }
+
+  .quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .qty-btn {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    transition: all 0.2s;
+  }
+
+  .qty-btn:hover {
+    background: #f5f5f5;
+    border-color: #999;
+  }
+
+  .quantity {
+    font-size: 14px;
+    min-width: 20px;
+    text-align: center;
+  }
+
+  .remove-btn {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #999;
+    font-size: 20px;
+    transition: all 0.2s;
+  }
+
+  .remove-btn:hover {
+    color: #e74c3c;
+    transform: scale(1.1);
+  }
+
+  .cart-summary {
+    padding: 20px 0;
+    border-top: 2px solid #000;
+    margin-top: 20px;
+  }
+
+  .cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  .total-price {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+  }
+
+  .checkout-btn {
+    width: 100%;
+    padding: 16px;
+    background: #000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .checkout-btn:hover {
+    background: #333;
+  }
+
+  .empty-cart {
+    text-align: center;
+    padding: 60px 20px;
+    color: #999;
+  }
+
+  .empty-cart p {
+    font-size: 16px;
+  }
+`;
+document.head.appendChild(cartStyleSheet);
