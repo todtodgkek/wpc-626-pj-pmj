@@ -390,29 +390,79 @@
     <div id="main-area">
       <main class="main-area">
         <!-- 2-1. 배너영역 -->
-        <section class="video-part">
-          <h2 class="temp-tit blind">2-1. 비디오영역</h2>
-          <iframe
-            src="https://www.youtube.com/embed/EDppy0bCqWE?autoplay=1&mute=1&loop=1&playlist=EDppy0bCqWE"
-            allow="autoplay"
-          ></iframe>
-        </section>
+    <section class="video-part">
+  <h2 class="temp-tit blind">2-1. 비디오영역</h2>
+  <div id="mainVideo"></div>
+  <script>
+    // YouTube IFrame API 로드
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-        <!-- 2-2. 퍼퓸영역 -->
-       <section class="perfune-section">
-  <div class="perfune-container">
-    <aside>
-      <a href="sunshine-all.html" class="perfume-link">
-        <span class="perfume-overlay">SUNSHINE</span>
-      </a>
-    </aside>
-    <aside>
-      <a href="sunshine-all.html" class="perfume-link">
-        <span class="perfume-overlay">SUNSHINE</span>
-      </a>
-    </aside>
-  </div>
+    var player;
+    var startTime = 138; // 2분 18초
+    var endTime = 158;   // 2분 38초
+    var checkInterval;
+
+    // API 준비되면 플레이어 생성
+    window.onYouTubeIframeAPIReady = function() {
+      player = new YT.Player('mainVideo', {
+        videoId: 'EDppy0bCqWE',
+        playerVars: {
+          'autoplay': 1,
+          'mute': 1,
+          'controls': 0,
+          'start': startTime,
+          'rel': 0,
+          'showinfo': 0,
+          'modestbranding': 1
+        },
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
+        }
+      });
+    };
+
+    function onPlayerReady(event) {
+      event.target.playVideo();
+      // 0.5초마다 현재 시간 체크
+      checkInterval = setInterval(function() {
+        if (player && player.getCurrentTime) {
+          var currentTime = player.getCurrentTime();
+          // 끝 시간에 도달하면 시작 시간으로 이동
+          if (currentTime >= endTime || currentTime < startTime) {
+            player.seekTo(startTime, true);
+          }
+        }
+      }, 500);
+    }
+
+    function onPlayerStateChange(event) {
+      // 영상이 끝나면 다시 시작 구간으로
+      if (event.data == YT.PlayerState.ENDED) {
+        player.seekTo(startTime, true);
+        player.playVideo();
+      }
+    }
+  </script>
 </section>
+        <!-- 2-2. 퍼퓸영역 -->
+        <section class="perfune-section">
+          <div class="perfune-container">
+            <aside>
+              <a href="sunshine-all.html" class="perfume-link">
+                <span class="perfume-overlay">SUNSHINE</span>
+              </a>
+            </aside>
+            <aside>
+              <a href="sunshine-all.html" class="perfume-link">
+                <span class="perfume-overlay">SUNSHINE</span>
+              </a>
+            </aside>
+          </div>
+        </section>
 
         <!-- 2-3. 영역 -->
         <section class="intro-part inbox">
